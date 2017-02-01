@@ -61,6 +61,7 @@ def all_supplies_in_holidays(holiday_hash)
       name = name.to_s.split("_").collect do |str|
         str.capitalize
       end.join(" ")
+      
       puts "  #{name}: #{activities.join(', ')}"
     end
   end
